@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "Lora", serif;
+    --font-mono: "JetBrains Mono", monospace;
+    --radius: 0.625rem;
+
+    --background: 0.98 0.01 0;
+    --foreground: 0.18 0.02 240;
+    --card: 0.99 0 0;
+    --card-foreground: 0.18 0.02 240;
+    --popover: 0.99 0.01 0;
+    --popover-foreground: 0.18 0.02 240;
+
+    --primary: 0.32 0.18 248;
+    --primary-foreground: 0.98 0.01 0;
+
+    --secondary: 0.72 0.12 80;
+    --secondary-foreground: 0.18 0.02 240;
+    --muted: 0.92 0.01 0;
+    --muted-foreground: 0.45 0.02 240;
+
+    --accent: 0.72 0.12 80;
+    --accent-foreground: 0.18 0.02 240;
+
+    --destructive: 0.58 0.22 20;
+    --destructive-foreground: 0.98 0.01 0;
+
+    --border: 0.88 0.01 0;
+    --input: 0.92 0.01 0;
+    --ring: 0.32 0.18 248;
+
+    --chart-1: 0.32 0.18 248;
+    --chart-2: 0.72 0.12 80;
+    --chart-3: 0.55 0.15 340;
+    --chart-4: 0.65 0.12 50;
+    --chart-5: 0.48 0.14 200;
+
+    --sidebar: 0.98 0.01 0;
+    --sidebar-foreground: 0.18 0.02 240;
+    --sidebar-primary: 0.32 0.18 248;
+    --sidebar-primary-foreground: 0.98 0.01 0;
+    --sidebar-accent: 0.72 0.12 80;
+    --sidebar-accent-foreground: 0.18 0.02 240;
+    --sidebar-border: 0.88 0.01 0;
+    --sidebar-ring: 0.32 0.18 248;
+  }
+
+  .dark {
+    --background: 0.12 0.01 240;
+    --foreground: 0.95 0.01 0;
+    --card: 0.16 0.02 240;
+    --card-foreground: 0.95 0.01 0;
+    --popover: 0.2 0.02 240;
+    --popover-foreground: 0.95 0.01 0;
+
+    --primary: 0.68 0.14 248;
+    --primary-foreground: 0.12 0.01 240;
+
+    --secondary: 0.75 0.12 80;
+    --secondary-foreground: 0.16 0.02 240;
+    --muted: 0.22 0.01 240;
+    --muted-foreground: 0.6 0.02 240;
+
+    --accent: 0.75 0.12 80;
+    --accent-foreground: 0.12 0.01 240;
+
+    --destructive: 0.62 0.2 20;
+    --destructive-foreground: 0.12 0.01 240;
+
+    --border: 0.28 0.01 240;
+    --input: 0.28 0.01 240;
+    --ring: 0.68 0.14 248;
+
+    --chart-1: 0.68 0.14 248;
+    --chart-2: 0.75 0.12 80;
+    --chart-3: 0.6 0.14 340;
+    --chart-4: 0.7 0.11 50;
+    --chart-5: 0.55 0.13 200;
+
+    --sidebar: 0.16 0.02 240;
+    --sidebar-foreground: 0.95 0.01 0;
+    --sidebar-primary: 0.68 0.14 248;
+    --sidebar-primary-foreground: 0.12 0.01 240;
+    --sidebar-accent: 0.75 0.12 80;
+    --sidebar-accent-foreground: 0.16 0.02 240;
+    --sidebar-border: 0.28 0.01 240;
+    --sidebar-ring: 0.68 0.14 248;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-opacity-90 transition-smooth font-semibold;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-opacity-90 transition-smooth font-semibold;
+  }
+
+  .text-accent-gold {
+    @apply text-accent;
+  }
+
+  .border-accent-bottom {
+    @apply border-b-2 border-accent;
+  }
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/fonts/SpaceGrotesk.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/fonts/Lora.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/JetBrainsMono.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}

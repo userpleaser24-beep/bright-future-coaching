@@ -1,0 +1,23 @@
+{
+  "overview": "Professional marketing website for Bright Future Coaching Centre — an educational institute offering coaching for NEET, IIT-JEE, CEE, and Board (XI & XII) exams. Features individual course detail pages, an enquiry form with backend storage, and a bold deep blue + gold design.",
+  "features": [
+    "Hero section with Admissions Open CTA",
+    "Individual course detail pages for NEET, IIT-JEE, CEE, and BOARD",
+    "Key features grid with icons",
+    "Student testimonials carousel",
+    "Enquiry form with backend persistence",
+    "About and contact page with address and phone numbers",
+    "Deep blue and gold color scheme",
+    "Fully mobile-responsive layout"
+  ],
+  "category": "education",
+  "tags": [
+    "coaching",
+    "education",
+    "neet",
+    "iit-jee",
+    "website",
+    "marketing"
+  ],
+  "last_updated": "2026-04-21T12:18:20.854Z"
+}
